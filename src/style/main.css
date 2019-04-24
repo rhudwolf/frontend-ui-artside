@@ -1,0 +1,180 @@
+/* FONT */
+@font-face {
+  font-family: 'DIN-light';
+  src: url('../fonts/DIN-LightAlternate.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/DIN-LightAlternate.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/DIN-LightAlternate.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/DIN-LightAlternate.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/DIN-LightAlternate.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/DIN-LightAlternate.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* SPECIFICATION */
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+body {
+	font-family:'DIN-light', Arial, sans-serif;
+	width: 100%;
+	background: url(../img/bg-body.jpg) center center;
+	font-size: 11px;
+	color: #363636;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+
+/* Header
+----------------------------------------------------------------------------- */
+.header {
+	height: 100px;
+	margin-bottom: 100px;
+}
+
+.header img {
+	margin-top: auto;
+}
+
+.header .container {
+	display: flex;
+	height: 100%;
+}
+
+.header p {
+	margin-top: auto;
+	margin-left: auto;
+	font-size: 18px;
+	line-height: 20px;
+	color: #707070;
+}
+
+.header p span {
+	font-size: 30px;
+	line-height: 32px;
+	display: block;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+/* Middle
+----------------------------------------------------------------------------- */
+.middle {
+	width: 100%;
+	position: relative;
+	font-family: 'DIN-light', Arial, Helvetica, sans-serif;
+}
+
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {
+	padding: 0 0 0 220px;
+}
+
+/* TEAM */
+
+.team p:nth-child(2) {
+	margin-bottom: 15px;
+}
+
+/* SERVICES */
+
+.services p {
+	margin-bottom: 15px;
+}
+
+
+/* Left Sidebar
+----------------------------------------------------------------------------- */
+.left-sidebar {
+	float: left;
+	width: 200px;
+	margin-left: -100%;
+	position: relative;
+}
+
+.left-sidebar a {
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 38px;
+}
+
+/* Footer
+----------------------------------------------------------------------------- */
+.footer {
+	height: 100px;
+}
