@@ -11,11 +11,10 @@
 
 /* SPECIFICATION */
 /* Eric Meyer's CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -66,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 body {
-	font-family:'DIN-light', Arial, sans-serif;
+	font-family: Verdana, Arial, sans-serif;
 	width: 100%;
 	background: url(../img/bg-body.jpg) center center;
 	font-size: 11px;
@@ -75,6 +74,10 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'DIN-light';
 }
 
 .wrapper {
@@ -88,10 +91,12 @@ a {
 .header {
 	height: 100px;
 	margin-bottom: 100px;
+	font-family: 'DIN-light';
 }
 
 .header img {
 	margin-top: auto;
+	width: 100px;
 }
 
 .header .container {
@@ -128,7 +133,7 @@ h2 {
 .middle {
 	width: 100%;
 	position: relative;
-	font-family: 'DIN-light', Arial, Helvetica, sans-serif;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .middle:after {
@@ -157,6 +162,54 @@ h2 {
 	margin-bottom: 15px;
 }
 
+/* GALLERY */
+
+table {
+	width: 100%;
+}
+
+table, th, td {
+	border: 1px solid #ddd;
+	text-align: left;
+	border-collapse: collapse;
+	
+}
+
+th {
+	height: 50px;
+	padding: 20px auto;
+
+}
+
+td {
+	
+}
+
+img {
+	width: 200px;
+}
+
+.cell {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.cell:hover {
+	background-color: #f5f5f5;
+}
+
+.square {
+	background: #363636;
+	display: block;
+	height: 77px;
+	width: 77px;
+	margin-right: 10px;	
+}
+
+/* SERVICES */
+	.services {
+		margin-bottom: 50px;
+	}
 
 /* Left Sidebar
 ----------------------------------------------------------------------------- */
@@ -165,16 +218,47 @@ h2 {
 	width: 200px;
 	margin-left: -100%;
 	position: relative;
+	font-family: 'DIN-light';
 }
 
 .left-sidebar a {
 	text-transform: uppercase;
 	font-size: 40px;
 	line-height: 38px;
+	color: #707070;
+}
+
+.left-sidebar a:hover {
+	background: rgba(54, 54, 54, 0.47);
+	color: #fff;
 }
 
 /* Footer
 ----------------------------------------------------------------------------- */
 .footer {
 	height: 100px;
+	border-top: 1px solid rgba(54, 54, 54, 0.47);
+	color: #707070;
+	font-family: Tahoma;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 0.1em;
+}
+
+.footer .wrapper {
+	display: flex;
+	margin-top: 37px;
+}
+
+.© {
+	width: 104px;
+	margin-right: 16px;
+}
+
+.footer a {
+	color: #707070;
+}
+
+.footer a:hover {
+	text-decoration: underline;
 }
