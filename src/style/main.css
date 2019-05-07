@@ -1,12 +1,24 @@
 /* FONT */
 @font-face {
-  font-family: 'DIN-light';
-  src: url('../fonts/DIN-LightAlternate.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/DIN-LightAlternate.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/DIN-LightAlternate.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/DIN-LightAlternate.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/DIN-LightAlternate.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/DIN-LightAlternate.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'DINCyr';
+  src: url('../fonts/DINCyr-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/DINCyr-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/DINCyr-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/DINCyr-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/DINCyr-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+			 url('../fonts/DINCyr-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: 100;
+}
+
+@font-face {
+  font-family: 'DINCyr';
+  src: url('../fonts/DINCyr-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/DINCyr-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/DINCyr-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/DINCyr-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/DINCyr-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/DINCyr-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: 500;
 }
 
 /* SPECIFICATION */
@@ -101,7 +113,8 @@ h1, h2, h3, h4 {
 .header {
 	height: 100px;
 	margin-bottom: 100px;
-	font-family: 'DIN-light';
+	font-family: 'DINCyr';
+	font-weight: 100;
 	grid-area: hd;
 }
 
@@ -142,6 +155,8 @@ h2 {
 	font-size: 18px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	font-family: 'DINCyr';
+	font-weight: 100;
 }
 
 /* MIDDLE
@@ -284,7 +299,8 @@ th {
 /* LEFT SIDEBAR
 ----------------------------------------------------------------------------- */
 .left-sidebar {
-	font-family: 'DIN-light';
+	font-family: 'DINCyr';
+	font-weight: 100;
 	grid-area: sd;
 }
 
