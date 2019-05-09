@@ -55,6 +55,7 @@ h1, h2, h3, h4 {
 	margin: 0 auto; */
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: none;
 	grid-auto-rows: minmax(100px, auto);
 	width: 998px;
 	margin: 0 auto;
@@ -157,8 +158,8 @@ h2 {
 	display: grid;
 	align-items: stretch;
 	grid-template-columns: repeat(3, 1fr);
-  	grid-gap: 0px;
-  	grid-auto-rows: minmax(100px, auto);
+ 	grid-gap: 0px;
+  grid-auto-rows: minmax(0px, auto);
 }
 
 .gallery .item1, .item2, .item3 {
@@ -178,6 +179,7 @@ h2 {
 	height: 77px;
 	min-width: 77px;
 	margin-right: 10px;	
+	margin-bottom: 20px;
 }
 
 .item .square:before {
