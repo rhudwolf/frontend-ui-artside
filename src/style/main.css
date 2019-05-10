@@ -57,13 +57,13 @@ h1, h2, h3, h4 {
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: none;
 	grid-auto-rows: minmax(100px, auto);
-	width: 998px;
+	max-width: 998px;
 	margin: 0 auto;
 	grid-gap: 0px;
-    grid-template-areas: 
-      "hd hd hd hd hd hd hd hd hd hd hd hd"
-      "sd sd . main main main main main main main main main"
-      "ft ft ft ft ft ft ft ft ft ft ft ft";
+	grid-template-areas: 
+		"hd hd hd hd hd hd hd hd hd hd hd hd"
+		"sd sd . main main main main main main main main main"
+		"ft ft ft ft ft ft ft ft ft ft ft ft";
 }
 
 
@@ -71,7 +71,7 @@ h1, h2, h3, h4 {
 ----------------------------------------------------------------------------- */
 .header {
 	height: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 85px;
 	font-family: 'DINCyr', Verdana, Arial, sans-serif;
 	font-weight: 100;
 	grid-area: hd;
@@ -124,6 +124,7 @@ h2 {
 	position: relative;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	grid-area: main;
+	margin-top: -10px;
 }
 
 .middle:after {
@@ -155,16 +156,9 @@ h2 {
 ----------------------------------------------------------------------------- */
 
 .gallery {
-	display: grid;
-	align-items: stretch;
-	grid-template-columns: repeat(3, 1fr);
- 	grid-gap: 0px;
-  grid-auto-rows: minmax(0px, auto);
-}
-
-.gallery .item1, .item2, .item3 {
-	margin: 0;
-	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
 }
 
 .item {
@@ -203,29 +197,6 @@ h2 {
 	background: url(../gallery/tumour-man-3_1510528a.jpg) no-repeat center center /cover;
 }
 
-.user7 {
-   grid-column: 2 / 2;
-   grid-row: 3 / 3;
-   background-position: center;
-}
-
-.user8 {
-   grid-column: 3 / 3;
-   grid-row: 3 / 3;
-}
-
-.user9 {
-   grid-column: 2 / 2;
-   grid-row: 4 / 4;
-   background-position: center;
-}
-
-.user10 {
-   grid-column: 3 / 3;
-   grid-row: 4 / 4;
-   background-position: center;
-}
-
 /*  TABLE OPTION */
 /* 
 
@@ -261,7 +232,7 @@ th {
 .left-sidebar {
 	font-family: 'DINCyr';
 	font-weight: 100;
-	grid-area: sd;;
+	grid-area: sd;
 }
 
 .left-sidebar a {
@@ -305,4 +276,56 @@ th {
 
 .footer a:hover {
 	text-decoration: underline;
+}
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+}
+/* 762-992px */
+@media screen and (max-width: 992px) {
+
+	.wrapper {
+		grid-template-areas: 
+			" hd hd hd "
+			" sd sd sd "
+			" main main main "
+			" ft ft ft ";
+		grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 700px;
+    margin: 0 auto;
+	}
+
+	.left-sidebar {
+		margin-bottom: 35px;
+		/* margin: 0 auto; */
+	}
+
+}
+
+/* 576-762px */
+@media screen and (max-width: 762px) {
+
+	.wrapper {
+		max-width: 550px;
+	}
+
+	.gallery {
+		flex-direction: column;
+	}
+
+	.gallery .item {
+		justify-content: center;
+	}
+
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+
+		.wrapper {
+			max-width: 400px;
+	}
+	
 }
