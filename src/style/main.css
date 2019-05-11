@@ -177,8 +177,7 @@ h1, h2 {
 	display: block;
 	height: 77px;
 	min-width: 77px;
-	margin-right: 10px;	
-	margin-bottom: 20px;
+	margin: 0 10px 20px 10px;	
 }
 
 .item .photo:before {
