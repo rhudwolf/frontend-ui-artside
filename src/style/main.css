@@ -110,7 +110,7 @@ section {
 	margin-bottom: 30px;
 }
 
-h2 {
+h1, h2 {
 	font-size: 18px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
@@ -161,12 +161,16 @@ h2 {
 	margin-bottom: 20px;
 }
 
+.department {
+	min-width: 240px;
+}
+
 .item {
 		background-position: center;
 		display: flex;
 }
 
-.square {
+.photo {
 	position: relative;
 	background: #363636;
 	display: block;
@@ -176,7 +180,7 @@ h2 {
 	margin-bottom: 20px;
 }
 
-.item .square:before {
+.item .photo:before {
 	display: block;
 	position: absolute;
 	content: '';
@@ -185,15 +189,15 @@ h2 {
 	overflow: hidden;
 }
 
-.kondratiev .square:before {
+.kondratiev .photo:before {
 	background: url(../gallery/Man-Booker-Prize-judges-p-011.jpg) no-repeat center center /cover;
 }
 
-.chepalyga .square:before {
+.chepalyga .photo:before {
 	background: url(../gallery/superman_man_of_steel_star_henry_cavill_1207744.jpg) no-repeat center center /cover;
 }
 
-.demianenko .square:before {
+.demianenko .photo:before {
 	background: url(../gallery/tumour-man-3_1510528a.jpg) no-repeat center center /cover;
 }
 
